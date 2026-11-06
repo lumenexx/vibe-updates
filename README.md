@@ -5,7 +5,7 @@ itself from here (OTA-1, lumenexx/projectionmapping-95d215a0#670).
 
 ## How a projector updates
 
-1. At app start, then every 6 hours, the app reads its channel's manifest:
+1. At app start, when the network first comes up, then every hour, the app reads its channel's manifest:
    `https://github.com/lumenexx/vibe-updates/releases/download/<channel>/update.json`
    - release builds (the factory APK): channel `production`
    - staging builds: channel `staging`
